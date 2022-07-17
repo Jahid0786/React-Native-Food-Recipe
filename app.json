@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ResidentSecurityApp",
-    "slug": "ResidentSecurityApp",
+    "name": "FoodRecipeApp",
+    "slug": "FoodRecipeApp",
     "version": "1.0.0",
     "jsEngine": "hermes",
     "orientation": "portrait",
@@ -26,6 +26,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7b123349-c1cf-4e08-b3e7-e6be1878f365"
+      }
     }
   }
 }
