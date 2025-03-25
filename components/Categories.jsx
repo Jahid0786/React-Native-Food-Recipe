@@ -7,6 +7,7 @@ import {
 } from "react-native-responsive-screen";
 
 import Animated, { FadeInDown } from "react-native-reanimated";
+import CacheImage from "./helper/images";
 
 const Categories = ({ activeCategory, handleChangeCategory, categories }) => {
   return (
@@ -34,8 +35,13 @@ const Categories = ({ activeCategory, handleChangeCategory, categories }) => {
               className="flex items-center"
             >
               <View style={activeButtonStyle}>
-                <Image
+                {/* <Image
                   source={{ uri: cat.strCategoryThumb }}
+                  style={{ width: hp(6), height: hp(6), borderRadius: hp(3) }}
+                /> */}
+
+                <CacheImage
+                  uri={cat.strCategoryThumb}
                   style={{ width: hp(6), height: hp(6), borderRadius: hp(3) }}
                 />
               </View>
